@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+<style>
+        /* General Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+        }
+
+        header {
+            background: #0073e6;
+            color: #fff;
+            padding: 1rem 0;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+            margin-top: 0.5rem;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 1.1rem;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        section {
+            padding: 2rem;
+        }
+
+        .about {
+            background: #f4f4f4;
+            text-align: center;
+        }
+
+        .projects {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+
+        .project-card {
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            overflow: hidden;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s;
+        }
+
+        .project-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .project-card img {
+            width: 100%;
+            height: auto;
+        }
+
+        .project-card h3 {
+            padding: 0.5rem;
+            background: #0073e6;
+            color: #fff;
+            text-align: center;
+        }
+
+        .project-card p {
+            padding: 1rem;
+        }
+
+            .youtube-section {
+            text-align: center;
+            margin: 40px 0;
+        }
+        .youtube-section h2 {
+            font-size: 24px;
+            color: #333;
+        }
+        .youtube-section iframe {
+            border: none;
+        }
+     
+        footer {
+            background: #333;
+            color: #fff;
+            text-align: center;
+            padding: 1rem 0;
+            margin-top: 2rem;
+        }
+
+        footer a {
+            color: #0073e6;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>My Portfolio</h1>
+        <nav>
+            <a href="#about">About</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <section class="about" id="about">
+        <h2>About Me</h2>
+        <p>Hello! I am a data scientist and AI enthusiast with a passion for building impactful solutions. Welcome to my portfolio page!</p>
+    </section>
+        <h2>My Projects</h2>
+    <section class="projects" id="projects">
+
+        <div class="project-card">
+          <a href="https://www.tutorialspoint.com/python/index.htm" target="_blank">
+            <img alt="Project 1" src="https://www.tutorialspoint.com/python/images/python-mini-logo.jpg?v1" />
+            <h3>Python Programming Tutorial</h3>
+            <p>A short description of the project goes here.</p></a>
+        </div>
+        <div class="project-card">
+          	<a href="https://www.tutorialspoint.com/machine_learning/index.htm" target="_blank">
+            <img alt="Project 2" src="https://www.tutorialspoint.com/machine_learning/images/machine-learning-mini-logo.jpg" />
+            <h3>Machine Learning Tutorial</h3>
+            <p>A short description of the project goes here.</p>
+            </a>
+        </div>
+        <div class="project-card">
+          <a href="https://www.tutorialspoint.com/artificial_intelligence/index.htm" target="_blank">
+            <img alt="Project 3" src="https://www.tutorialspoint.com/artificial_intelligence/images/artificial-intelligence-mini-logo.jpg" />
+            <h3>Artificial Intelligence Tutorial</h3>
+            <p>A short description of the project goes here.</p>
+            </a>
+        </div>
+         <div class="project-card">
+          <a href="https://www.tutorialspoint.com/gen-ai/index.htm" target="_blank">
+            <img alt="Project 4" src="https://www.tutorialspoint.com/gen-ai/images/generative-ai-mini-logo.jpg" />
+            <h3>Artificial Intelligence Tutorial</h3>
+            <p>A short description of the project goes here.</p>
+            </a>
+        </div>
+       <div class="project-card">
+                <a href="https://www.tutorialspoint.com/javascript/index.htm" target="_blank">
+            <img alt="Project 5" src="https://www.tutorialspoint.com/javascript/images/javascript-mini-logo.jpg" />
+            <h3>Artificial Intelligence Tutorial</h3>
+            <p>A short description of the project goes here.</p>
+            </a>
+        </div>
+          <div class="project-card">
+                <a href="https://www.tutorialspoint.com/typescript/index.htm" target="_blank">
+            <img alt="Project 6" src="https://www.tutorialspoint.com/typescript/images/typescript-mini-logo.jpg" />
+            <h3>Artificial Intelligence Tutorial</h3>
+            <p>A short description of the project goes here.</p>
+            </a>
+        </div>
+    </section>
+	      <h2>Articles</h2>
+ 	<section class="projects" id="projects">
+         <div class="project-card">
+                <a href="https://www.tutorialspoint.com/authors/shahid-akhtar-khan" target="_blank">
+            <img alt="Project 1" src="https://www.tutorialspoint.com/images/trending_categories.png?v2" />
+            <h3>Articles at Turorialspoint</h3>
+            <p>A short description of the project goes here.</p>
+            </a>
+        </div>
+      <h2>Youtube</h2>
+          <section class="projects" id="projects">
+            <div class="project-card">
+        <h2>Check Out My YouTube Channel: <a href="https://www.youtube.com/@binarystudy" target="_blank">BinaryStudy</a></h2>
+        <iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="" frameborder="0" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/qxTrX6yc75s?si=o9e1Sb9QQ6vRmmj-" title="YouTube video player"></iframe>
+    </div>
+      </section>
+
+    <footer id="contact">
+        <h2>Contact Me</h2>
+        <p>Email: <a href="mailto:example@example.com">example@example.com</a></p>
+        <p>Phone: +123 456 7890</p>
+    </footer>
+
+    <script>
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('nav a').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</section>
+</body>
+</html>
